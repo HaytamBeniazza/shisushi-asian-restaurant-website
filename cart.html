@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jomolhari&display=swap" rel="stylesheet">
+        <script src="app.js"></script>
+        <title>shisushi</title>
+    </head>
+<body class="body_about">
+    <nav>
+    <a href="index.html"><div class="logo"><img class="logo_img" src="photos/logo.png" alt=""></div></a>
+    <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+                </label>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="active" href="cart.html">Cart</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+<h1 class="title_index">Cart</h1>
+    <div>
+        <label for="select"></label>
+        <select id="select" onchange="PlatSelectioner()">
+        <option id="all" value="0">All</option>
+        <option id="sushi0" value="1">Sushi</option>
+        <option id="obento0" value="2">Obento</option>
+        <option id="plats0" value="3">Plats</option>
+        <option id="salades0" value="4">Salades</option>
+        </select>
+    </div>
+    <div id="salade" class="p_list">
+        <div id="salade1" class="menu_box1">
+             <div class="txt_box1">
+                 <img class="img_p1" src="photos/best_salad1.jpeg" alt="asian food">
+                 <div class="title_p1">
+                     <span>Salade1</span>
+                     <span>$14.00</span>
+                 </div>
+                 <div class="box_buy1">
+                     <div class="buy1_box">
+                         <button class="buy1" onclick="ajouter('salade1',14.00,1)">Buy Now </button>
+                     </div>
+                 </div>
+             </div>
+         </div> 
+        <div id="salade2" class="menu_box2">
+             <div class="txt_box1">
+                 <img class="img_p2" src="photos/best_salad2.jpeg" alt="asian food">
+                 <div class="title_p2">
+                     <span>Salade2</span>
+                     <span>$8.00</span>
+                 </div>
+                 <div class="box_buy1">
+                     <div class="buy1_box">
+                         <button class="buy1" onclick="ajouter('salade2',8.00,2)">Buy Now</button>
+                     </div>
+                 </div>
+             </div>
+         </div> 
+        <div id="salade3" class="menu_box3">
+             <div class="txt_box1">
+                 <img class="img_p3" src="photos/best_salad3.jpeg" alt="asian food">
+                 <div class="title_p1">
+                     <span>Salade3</span>
+                     <span>$10.00</span>
+                 </div>
+                 <div class="box_buy1">
+                     <div class="buy1_box">
+                         <button class="buy1" onclick="ajouter('salade3',10.00,3)">Buy Now</button>
+                     </div>
+                 </div>
+             </div>
+         </div> 
+     </div>
+     <div id="plat" class="p_list2 p_list">
+         <div class="menu_box4">
+             <div class="txt_box1">
+                 <img class="img_p1" src="photos/best_plate_1.jpeg" alt="asian food">
+                 <div class="title_p2">
+                     <span>plate1</span>
+                     <span>$5.50</span>
+                 </div>
+                 <div class="box_buy1">
+                     <div class="buy1_box">
+                         <button class="buy1" onclick="ajouter('plate1',5.50,4)">Buy Now</button>
+                     </div>
+                 </div>
+             </div>
+         </div> 
+        <div class="menu_box5">
+             <div class="txt_box1">
+                 <img class="img_p1" src="photos/best_plate_2.jpeg" alt="asian food">
+                 <div class="title_p1">
+                     <span>plate2<span>
+                        <span>$7.50</span>
+                 </div>
+                 <div class="box_buy1">
+                     <div class="buy1_box">
+                         <button class="buy1" onclick="ajouter('plate2',7.50,5)">Buy Now</button>
+                     </div>
+                 </div>
+             </div>
+         </div> 
+        <div class="menu_box6">
+             <div class="txt_box1">
+                 <img class="img_p1" src="photos/best_plate_3.jpeg" alt="asian food">
+                 <div class="title_p2">
+                     <span>plate3</span>
+                     <span>$9.50</span>
+                 </div>
+                 <div class="box_buy1">
+                     <div class="buy1_box">
+                         <button class="buy1" onclick="ajouter('plate3',9.50,6)">Buy Now</button>
+                     </div>
+                 </div>
+             </div>
+         </div> 
+     </div>
+     <div id="obento" class="p_list ">
+         <div class="menu_box7">
+             <div class="txt_box1">
+                 <img class="img_p1" src="photos/best_bento1.jpeg" alt="asian food">
+                 <div class="title_p1">
+                     <span>Obento1</span>
+                     <span>$11.00</span>
+                 </div>
+                 <div class="box_buy1">
+                     <div class="buy1_box">
+                         <button class="buy1" onclick="ajouter('obento1',11.00,7)">Buy Now</button>
+                     </div>
+                 </div>
+             </div>
+         </div> 
+        <div class="menu_box8">
+             <div class="txt_box1">
+                 <img class="img_p1" src="photos/best_bento2.jpeg" alt="asian food">
+                 <div class="title_p2">
+                     <span>Obento2</span>
+                     <span>$13.50</span>
+                 </div>
+                 <div class="box_buy1">
+                     <div class="buy1_box">
+                         <button class="buy1" onclick="ajouter('obento2',13.50,8)">Buy Now</button>
+                     </div>
+                 </div>
+             </div>
+         </div> 
+        <div class="menu_box9">
+             <div class="txt_box1">
+                 <img class="img_p1" src="photos/best_bento3.jpeg" alt="asian food">
+                 <div class="title_p1">
+                     <span>Obento3</span>
+                     <span>$6.99</span>
+                 </div>
+                 <div class="box_buy1">
+                     <div class="buy1_box">
+                        <button class="buy1" onclick="ajouter('obento3',6.99,9)">Buy Now</button>
+                     </div>
+                 </div>
+             </div>
+         </div> 
+     </div>
+     <div id="sushi" class="p_list2 p_list">
+         <div class="menu_box4">
+             <div class="txt_box1">
+                 <img class="img_p1" src="photos/best_sushi1.jpeg" alt="asian food">
+                 <div class="title_p2">
+                     <span>Sushi1</span>
+                     <span>$2.90</span>
+                 </div>
+                 <div class="box_buy1">
+                     <div class="buy1_box">
+                        <button class="buy1" onclick="ajouter('sushi1',2.90,10)">Buy Now</button>
+                     </div>
+                 </div>
+             </div>
+         </div> 
+        <div class="menu_box5">
+             <div class="txt_box1">
+                 <img class="img_p1" src="photos/best_sushi2.jpeg" alt="asian food">
+                 <div class="title_p1">
+                     <span>Sushi2</span>
+                     <span>$3.50</span>
+                 </div>
+                 <div class="box_buy1">
+                     <div class="buy1_box">
+                        <button class="buy1"onclick="ajouter('sushi2',3.50,11)">Buy Now</button>
+                     </div>
+                 </div>
+             </div>
+         </div> 
+        <div class="menu_box6">
+             <div class="txt_box1">
+                 <img class="img_p1" src="photos/best_sushi3.jpeg" alt="asian food">
+                 <div class="title_p2">
+                     <span>Sushi3</span>
+                     <span>$1.50</span>
+                 </div>
+                 <div class="box_buy1">
+                     <div class="buy1_box">
+                        <button class="buy1" onclick="ajouter('sushi3',1.50,12)">Buy Now</button>
+                     </div>
+                 </div>
+             </div>
+         </div> 
+     </div>
+     <section id="panier1" class="panier">
+        <div class="panier_title">
+            <span>Panier</span>
+        </div>
+        <hr class="hr">
+        <div class="panier_elements">
+            <div>
+               <p>Item</p> 
+            </div>
+            <div>
+              <p>Quantity</p>
+            </div>
+            <div>
+              <p>Price</p>  
+            </div>
+        </div>
+        <hr class="hr">
+        <div id="cart">
+
+        </div>
+        <hr class="hr">
+        <div id="cart_totale">
+            <p>Totale_Price: <span id="ttt">0.00</span>$</p>
+        </div>
+
+     </section>
+     <section class="footer">
+         <hr>
+         <h4>Suivez Nous</h4>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptatum <br> dolorem eum praesentium facilis at vel quisquam incidunt illo tempora, eos consequuntur</p>
+         <div class="icons">
+             <a href=""><i class="fa fa-facebook"></i></a>
+             <a href=""><i class="fa fa-twitter"></i></a>
+             <a href=""><i class="fa fa-linkedin"></i></a>
+         </div>
+         <section class="container-fluid footer_section">
+             <p>
+               &copy; <span id="displayYear">2022</span> All Rights Reserved 
+             </p>
+           </section>
+     </section>
+    
+</body>
+</html>
+<script src="./app.js"></script>
